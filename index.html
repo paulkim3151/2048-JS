@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="game_container">
+            <div class="header">
+                <h1>2048</h1>
+                <div class="score_wrapper">
+                    <div class="score_container">
+                        <div class="score_title">SCORE</div>
+                        <div class="score">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="tile_container">
+                    <div class="row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leaderboard_container">
+            <div class="leaderboard_title">LEADERBOARD</div>
+        </div>
+    </div>
+    <div class="gameOverDialog hidden">
+        <div class="gameover_container">
+            <h1>Game Over!</h1>
+            <form class="scoreForm" id="scoreForm">
+                <input type="text" id="name" required maxlength="15" placeholder="등록할 닉네임을 입력하세요"></input>
+                <button type="submit" form="scoreForm">등록</button>
+            </form>
+        </div>
+    </div>
+    <footer id="footer" class="hidden">다시 시작하려면 F5키를 누르세요</footer>
+</body>
+<script src="2048.js"></script>
+</html>
